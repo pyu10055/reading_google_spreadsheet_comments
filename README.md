@@ -55,7 +55,6 @@ We submitted a [PR  here](https://github.com/Empact/roo/pull/95), you can use ou
 Here is the code snippet for exporting the spreadsheet and retrieve the comment:
 
 ```
-#username and password
   drive = GoogleDrive.login("username@gmail.com", "mypassword")
 
   path =
@@ -65,6 +64,7 @@ Here is the code snippet for exporting the spreadsheet and retrieve the comment:
   # https://docs.google.com/spreadsheet/ccc?key=pz7XtlQC-PYx-jrVMJErTcg
   drive.spreadsheet_by_key("pz7XtlQC-PYx-jrVMJErTcg").export_as_file(path, "xls")
 
-  Roo::Excelx.new(path, comment_xpath: './xmlns:text/xmlns:t').comments #[[129, 60, "New comment"], [156, 5, "comments\n\t-Ping Yu"]]
+  Roo::Excelx.new(path, comment_xpath: './xmlns:text/xmlns:t').comments 
+  #[[129, 60, "New comment"], [156, 5, "comments\n\t-Ping Yu"]]
 
 ```
