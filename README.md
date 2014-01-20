@@ -3,7 +3,7 @@
 In one of our project, we are using Google Spreadsheet as a major data source. We are using Roo::Google in [Roo Gem](https://github.com/Empact/roo) to access the spreadsheet. Roo actually uses [Google Drive Ruby Gem](https://github.com/gimite/google-drive-ruby) to communicate with [Google Spreadsheet API v3](https://developers.google.com/google-apps/spreadsheets/#working_with_cell-based_feeds).
 
 Everything works pretty well until recently we have to access the comments on individual cells.
-![cell comments](https://raw2.github.com/pyu10055/reading_google_spreadsheet_comments/master/excelx.png)
+![cell comments](https://raw2.github.com/pyu10055/reading_google_spreadsheet_comments/master/comments.png)
 
 This feature is not exposed by [Google Spreadsheet API v3](https://developers.google.com/google-apps/spreadsheets/#working_with_cell-based_feeds),
 as a result, we can retrieve those comments through Roo::Google in [Roo Gem](https://github.com/Empact/roo).
