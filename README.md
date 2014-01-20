@@ -3,7 +3,7 @@
 In one of our project, we are using Google Spreadsheet as a major data source. We are using Roo::Google in [Roo Gem](https://github.com/Empact/roo) to access the spreadsheet. Roo actually uses [Google Drive Ruby Gem](https://github.com/gimite/google-drive-ruby) to communicate with [Google Spreadsheet API v3](https://developers.google.com/google-apps/spreadsheets/#working_with_cell-based_feeds).
 
 Everything works pretty well until recently we have to access the comments on individual cells.
-![cell_comment](https://github.com/pyu10055/reading_google_spreadsheet_comments/blob/master/comments.png "Cell Comment")
+![cell_comment](https://github.com/pyu10055/reading_google_spreadsheet_comments/blob/master/comments.png)
 
 This feature is not exposed by [Google Spreadsheet API v3](https://developers.google.com/google-apps/spreadsheets/#working_with_cell-based_feeds),
 as a result, we can retrieve those comments through Roo::Google in [Roo Gem](https://github.com/Empact/roo).
@@ -33,7 +33,7 @@ The html Google generated from the spreadsheet actually are malformatted and ver
 
 We decide to look further. We export the spreadsheet into excelx format. since xlsx file is actually just a zip file, we were surprised when we unzip that file:
 
-![excelx_content](https://github.com/pyu10055/reading_google_spreadsheet_comments/blob/master/excelx.png "Excelx content")
+![excelx_content](https://github.com/pyu10055/reading_google_spreadsheet_comments/blob/master/excelx.png)
 
 It has a file called comments1.xml, and its content is exact what we need.
 
